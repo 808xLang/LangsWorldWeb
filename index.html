@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="media/808lang.png" class="logo">
+            <img src="./Media/808lang.png" class="logo">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -25,13 +25,13 @@
             </div>
             <div class="right-col">
                 <p>Click Here To Listen</p>
-                <img src="Media/START.png" id="icon"> 
+                <img src="./Media/START.png" id="icon"> 
             </div>
         </div>
 
     </div>
     <audio id="mySong">
-        <source src="media/Until next time 2.mp3" type="audio/mp3">
+        <source src="./Media/Until next time 2.mp3" type="audio/mp3">
     </audio>
     <script>
         var mySong = document.getElementById("mySong");
@@ -40,11 +40,11 @@
         icon.onclick = function(){
             if(mySong.paused){
                 mySong.play();
-                icon.src = "media/Pause Button.png"
+                icon.src = "./Media/Pause Button.png"
             }
             else{
                 mySong.pause();
-                icon.src = "Media/START.png"
+                icon.src = "./Media/START.png"
             }
         }
     </script>
